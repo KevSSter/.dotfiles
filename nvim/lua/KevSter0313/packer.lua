@@ -11,6 +11,7 @@ return require('packer').startup(function(use)
         -- or                            , branch = '0.1.x',
         requires = { { 'nvim-lua/plenary.nvim' } }
     }
+    use{'nvim-lua/popup.nvim'}
 
     use {
         'nvim-tree/nvim-tree.lua',
@@ -24,9 +25,6 @@ return require('packer').startup(function(use)
     use({
         'rose-pine/neovim',
         as = 'rose-pine',
-        config = function()
-            vim.cmd('colorscheme rose-pine')
-        end
     })
     use {
         'VonHeikemen/lsp-zero.nvim',
@@ -68,8 +66,8 @@ return require('packer').startup(function(use)
     --         require("focus").setup({hybridnumber = true})
     --     end
     -- }
-    use {"AndrewRadev/tagalong.vim"}
-    use ('mg979/vim-visual-multi', {branch = 'master'})
+    use { "AndrewRadev/tagalong.vim" }
+    use('mg979/vim-visual-multi', { branch = 'master' })
     use 'folke/tokyonight.nvim'
     use 'NvChad/nvim-colorizer.lua'
 end)
