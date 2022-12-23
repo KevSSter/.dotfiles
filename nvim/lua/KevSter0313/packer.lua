@@ -70,4 +70,5 @@ return require('packer').startup(function(use)
     use('mg979/vim-visual-multi', { branch = 'master' })
     use 'folke/tokyonight.nvim'
     use 'NvChad/nvim-colorizer.lua'
+    use "terrortylor/nvim-comment"
 end)
